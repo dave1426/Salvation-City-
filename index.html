@@ -41,4 +41,255 @@
                 Plan a Visit
             </a>
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-2xl text-gray-
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-purple-950/95 border-b border-purple-900 px-6 py-4 flex flex-col gap-4">
+            <a href="#vision" class="mobile-link text-gray-300 hover:text-white">Our Vision</a>
+            <a href="#scripture" class="mobile-link text-gray-300 hover:text-white">Foundation</a>
+            <a href="#services" class="mobile-link text-gray-300 hover:text-white">Services & Location</a>
+            <a href="#connect" class="mobile-link text-gray-300 hover:text-white">Connect</a>
+            <a href="#connect" class="mobile-link bg-churchRed text-center text-white py-2.5 rounded-full font-semibold">Plan a Visit</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Video Loop -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <!-- Background Video Element -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-30 scale-105">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-silhouette-of-a-person-with-arms-open-worshipping-42841-large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Overlay Gradients to blend colors -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-churchBlue via-churchPurple/70 to-churchBlue/90 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Glow Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl pointer-events-none z-1"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 bg-churchRed/20 border border-churchRed/40 text-churchRed px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                <i class="fa-solid fa-dove"></i> Welcome Home To Salvation City Of All Nations
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
+                Experience <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-300 to-churchRed">Redemption</span>, Restoration & Repositioning
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow">
+                No matter where you've been or what you're facing, God has a fresh start for your life. You belong here in Cape Town.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#connect" class="w-full sm:w-auto bg-churchRed hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-full transition shadow-xl shadow-red-500/25 text-center">
+                    I'm New / Plan A Visit
+                </a>
+                <a href="#vision" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-full transition text-center">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripture Statement Section -->
+    <section id="scripture" class="py-20 px-6 bg-purple-950/40 border-y border-purple-900/30 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="text-churchRed text-3xl mb-4"><i class="fa-solid fa-cross"></i></div>
+            <blockquote class="text-xl sm:text-2xl lg:text-3xl font-serif italic text-gray-200 mb-6 leading-relaxed">
+                "In that day shall this song be sung in the land of Judah; We have a strong city; salvation will God appoint for walls and bulwarks."
+            </blockquote>
+            <span class="text-churchRed font-semibold tracking-widest uppercase text-sm">Isaiah 26:1 KJV</span>
+        </div>
+    </section>
+
+    <!-- Vision Pillars Section with Standard Cross Image for Redemption -->
+    <section id="vision" class="py-24 px-6 bg-churchBlue">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-churchRed font-semibold text-sm uppercase tracking-widest">Our Mandate</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-2 mb-4">Our Core Pillars</h2>
+                <p class="text-gray-400">The foundational truth driving everything we do as a family of faith.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1: Redemption (Classic Cross Image) -->
+                <div class="bg-purple-950/30 border border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" alt="Classic Christian Cross" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 bg-churchRed/10 text-churchRed rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                                <i class="fa-solid fa-cross"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-white">Redemption</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Finding freedom and new life through the finished work of Jesus Christ. Your past does not define your future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Restoration -->
+                <div class="bg-purple-950/30 border border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800" alt="Worship hands lifted" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 bg-churchRed/10 text-churchRed rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                                <i class="fa-solid fa-hands-holding-child"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-white">Restoration</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Healing broken pieces, rebuilding families, and restoring peace and joy back into your everyday life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Repositioning -->
+                <div class="bg-purple-950/30 border border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=800" alt="Light through church windows" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 bg-churchRed/10 text-churchRed rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-white">Repositioning</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Stepping into divine purpose, alignment, and authority to fulfill the extraordinary destiny God designed for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Location Section -->
+    <section id="services" class="py-24 px-6 bg-churchBlue/50 border-t border-purple-900/20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-churchRed font-semibold text-sm uppercase tracking-widest">Join Us Live</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-2 mb-6">Service Times & Location</h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    We gather weekly inside our strong city to encounter God's presence in worship, receive practical biblical truth, and connect with an authentic community.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-purple-950/20 border border-purple-900/30">
+                        <div class="text-churchRed text-xl mt-1"><i class="fa-regular fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Sunday Celebration Service</h4>
+                            <p class="text-gray-400 text-sm">10:00 AM – 11:30 AM (Every Sunday)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-purple-950/20 border border-purple-900/30">
+                        <div class="text-churchRed text-xl mt-1"><i class="fa-solid fa-moon"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Daily Prayer & Fellowship</h4>
+                            <p class="text-gray-400 text-sm">9:00 PM – 10:00 PM (Daily, except Saturdays)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-purple-950/20 border border-purple-900/30">
+                        <div class="text-churchRed text-xl mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white">Location</h4>
+                            <p class="text-gray-400 text-sm">3 Redcliffe Close, Parklands, Cape Town</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-churchPurple/30 to-purple-950/50 p-8 sm:p-12 rounded-3xl border border-purple-800/30 text-center relative overflow-hidden">
+                <div class="absolute -top-4 -right-4 bg-churchRed text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-lg">Open To Everyone</div>
+                <div class="text-churchRed text-4xl mb-4"><i class="fa-solid fa-hands-praying"></i></div>
+                <h3 class="text-2xl font-bold mb-4">First Time Visiting?</h3>
+                <p class="text-gray-300 text-sm mb-6">Let us know you're coming! We'll save a seat for you, help you find parking at 3 Redcliffe Close, and welcome you properly.</p>
+                <a href="#connect" class="inline-block bg-white text-churchBlue hover:bg-gray-100 font-bold px-6 py-3 rounded-full transition shadow-lg">
+                    Plan Your Visit Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect / Visit Form Section -->
+    <section id="connect" class="py-24 px-6 bg-purple-950/20 border-t border-purple-900/20">
+        <div class="max-w-xl mx-auto bg-churchBlue border border-purple-900/40 p-8 sm:p-12 rounded-3xl shadow-2xl relative">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Plan Your Visit</h2>
+                <p class="text-gray-400 text-sm">Fill out the form below and our hospitality team at Salvation City Of All Nations will reach out.</p>
+            </div>
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Full Name</label>
+                    <input type="text" required class="w-full bg-purple-950/40 border border-purple-900/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-churchRed transition placeholder-gray-600" placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Email Address</label>
+                    <input type="email" required class="w-full bg-purple-950/40 border border-purple-900/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-churchRed transition placeholder-gray-600" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Which service will you attend?</label>
+                    <select class="w-full bg-purple-950/40 border border-purple-900/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-churchRed transition">
+                        <option class="bg-churchBlue">Sunday Service (10:00 AM – 11:30 AM)</option>
+                        <option class="bg-churchBlue">Daily Evening Service (9:00 PM – 10:00 PM)</option>
+                        <option class="bg-churchBlue">Online Stream</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-churchRed hover:bg-red-600 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-red-500/20 mt-2">
+                    Submit & Connect
+                </button>
+            </form>
+            <div id="success-msg" class="hidden mt-4 p-4 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-center rounded-xl text-sm font-medium">
+                Thank you! We look forward to welcoming you at 3 Redcliffe Close.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-churchBlue border-t border-purple-900/30 py-12 px-6 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p>&copy; 2026 Salvation City Of All Nations. All rights reserved.</p>
+            <div class="flex gap-6 text-xl">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu toggle and interaction -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            form.reset();
+            const successMsg = document.getElementById('success-msg');
+            successMsg.classList.remove('hidden');
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
