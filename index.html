@@ -19,6 +19,11 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Simple fade slideshow */
+       .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 2s ease-in-out; }
+       .slide.active { opacity: 1; }
+    </style>
 </head>
 <body class="bg-churchBlue text-white font-sans antialiased selection:bg-churchRed selection:text-white">
 
@@ -26,7 +31,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-churchBlue/90 backdrop-blur-md border-b border-purple-900/30">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-wider uppercase flex items-center gap-3">
-                <!-- YOUR LOGO ADDED HERE WITH EXACT FILENAME -->
+                <!-- LOGO = 010 STAYS -->
                 <img src="IMG-20260818-WA0010.jpg" alt="Salvation City Logo" class="h-12 w-12 rounded-full object-cover border-2 border-churchRed">
                 <span class="text-xs sm:text-sm font-extrabold tracking-tight">SALVATION CITY OF ALL NATIONS</span>
             </a>
@@ -54,13 +59,12 @@
         </div>
     </header>
 
-    <!-- Hero Section with Cross Background Image -->
+    <!-- Hero Section with 011 and 012 SLIDESHOW Background -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
-        <!-- Background Image -->
+        <!-- Background Images 011 + 012 -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&q=80&w=1920" 
-                 alt="Cross at sunrise" 
-                 class="w-full h-full object-cover opacity-40">
+            <img src="IMG-20260818-WA0011.jpg" class="slide active w-full h-full object-cover opacity-40">
+            <img src="IMG-20260818-WA0012.jpg" class="slide w-full h-full object-cover opacity-40">
             <!-- Dark + Purple Overlay -->
             <div class="absolute inset-0 bg-gradient-to-b from-churchBlue/90 via-churchPurple/70 to-churchBlue/95"></div>
         </div>
@@ -109,7 +113,7 @@
                 <p class="text-gray-400">The foundational truth driving everything we do as a family of faith.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-purple-950/30 border border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex-col">
+                <div class="bg-purple-950/30 border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex-col">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&q=80&w=800" alt="Christian Cross at Sunrise" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
@@ -122,7 +126,7 @@
                         <p class="text-gray-400 text-sm">Finding freedom and new life through the finished work of Jesus Christ. Your past does not define your future.</p>
                     </div>
                 </div>
-                <div class="bg-purple-950/30 border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex flex-col">
+                <div class="bg-purple-950/30 border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex-col">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800" alt="Worship hands lifted" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
@@ -135,7 +139,7 @@
                         <p class="text-gray-400 text-sm">Healing broken pieces, rebuilding families, and restoring peace and joy back into your everyday life.</p>
                     </div>
                 </div>
-                <div class="bg-purple-950/30 border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex flex-col">
+                <div class="bg-purple-950/30 border-purple-900/40 rounded-2xl overflow-hidden group hover:border-churchRed/50 transition flex-col">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=800" alt="Light through church windows" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-churchBlue via-transparent to-transparent"></div>
@@ -238,7 +242,7 @@
 
     <!-- Footer -->
     <footer class="bg-churchBlue border-t border-purple-900/30 py-12 px-6 text-center text-gray-500 text-sm">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="max-w-7xl mx-auto flex-col sm:flex-row items-center justify-between gap-6">
             <p>&copy; 2026 Salvation City Of All Nations. All rights reserved. | <a href="https://wa.me/27658718996" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-whatsapp"></i> +27 65 871 8996</a></p>
             <div class="flex gap-6 text-xl">
                 <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
@@ -268,6 +272,15 @@
             successMsg.classList.remove('hidden');
             setTimeout(() => { successMsg.classList.add('hidden'); }, 5000);
         }
+
+        // SLIDESHOW for Hero Background 011 <-> 012
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 5000); // changes every 5 seconds
     </script>
 </body>
-                        </html>
+        </html>
