@@ -35,24 +35,34 @@
                 <img src="IMG-20260818-WA0010.jpg" alt="Salvation City Logo" class="h-12 w-12 rounded-full object-cover border-2 border-churchRed">
                 <span class="text-xs sm:text-sm font-extrabold tracking-tight">SALVATION CITY OF ALL NATIONS</span>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
                 <a href="#vision" class="hover:text-white transition">Our Vision</a>
                 <a href="#scripture" class="hover:text-white transition">Foundation</a>
                 <a href="#services" class="hover:text-white transition">Services & Location</a>
                 <a href="#connect" class="hover:text-white transition">Connect</a>
+                <!-- YOUTUBE BUTTON ADDED -->
+                <a href="https://youtube.com/@pchimezirim?si=gbOfIgxONkMWaX01" target="_blank" class="flex items-center gap-2 text-red-500 hover:text-red-400 transition">
+                    <i class="fa-brands fa-youtube text-lg"></i> Watch Live
+                </a>
             </nav>
-            <a href="https://wa.me/27658718996" target="_blank" class="hidden md:inline-flex bg-churchRed hover:bg-red-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-red-500/20">
-                <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
-            </a>
-            <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/27658718996" target="_blank" class="hidden md:inline-flex bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition shadow-lg">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+                <button id="menu-btn" class="md:hidden text-2xl text-gray-300 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-purple-950/95 border-b border-purple-900 px-6 py-4 flex-col gap-4">
             <a href="#vision" class="mobile-link text-gray-300 hover:text-white">Our Vision</a>
             <a href="#scripture" class="mobile-link text-gray-300 hover:text-white">Foundation</a>
             <a href="#services" class="mobile-link text-gray-300 hover:text-white">Services & Location</a>
             <a href="#connect" class="mobile-link text-gray-300 hover:text-white">Connect</a>
+            <!-- YOUTUBE MOBILE LINK ADDED -->
+            <a href="https://youtube.com/@pchimezirim?si=gbOfIgxONkMWaX01" target="_blank" class="mobile-link flex items-center gap-2 text-red-500 font-semibold">
+                <i class="fa-brands fa-youtube"></i> Watch On YouTube
+            </a>
             <a href="https://wa.me/27658718996" target="_blank" class="mobile-link bg-green-600 text-center text-white py-2.5 rounded-full font-semibold">
                 <i class="fa-brands fa-whatsapp mr-2"></i> +27 65 871 8996
             </a>
@@ -73,7 +83,7 @@
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none z-1"></div>
 
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="inline-flex items-center gap-2 bg-churchRed/20 border border-churchRed/40 text-churchRed px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm">
+            <span class="inline-flex items-center gap-2 bg-churchRed/20 border-churchRed/40 text-churchRed px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm">
                 <i class="fa-solid fa-dove"></i> WELCOME HOME TO SALVATION CITY OF ALL NATIONS
             </span>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
@@ -86,8 +96,9 @@
                 <a href="#connect" class="w-full sm:w-auto bg-churchRed hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-full transition shadow-xl shadow-red-500/25 text-center">
                     I'm New / Plan A Visit
                 </a>
-                <a href="https://wa.me/27658718996" target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 border-green-500 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-full transition text-center">
-                    <i class="fa-brands fa-whatsapp mr-2"></i> +27 65 871 8996
+                <!-- YOUTUBE BUTTON ADDED IN HERO -->
+                <a href="https://youtube.com/@pchimezirim?si=gbOfIgxONkMWaX01" target="_blank" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-full transition shadow-xl shadow-red-500/25 text-center">
+                    <i class="fa-brands fa-youtube mr-2"></i> Watch Sermons
                 </a>
             </div>
         </div>
@@ -160,7 +171,7 @@
     </section>
 
     <!-- Services & Location -->
-    <section id="services" class="py-24 px-6 bg-churchBlue/50 border-t border-purple-900/20">
+    <section id="services" class="pt-8 pb-24 px-6 bg-churchBlue/50 border-t border-purple-900/20">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div>
                 <span class="text-churchRed font-semibold text-sm uppercase tracking-widest">Join Us Live</span>
@@ -245,12 +256,14 @@
 
     <!-- Footer -->
     <footer class="bg-churchBlue border-t border-purple-900/30 py-12 px-6 text-center text-gray-500 text-sm">
-        <div class="max-w-7xl mx-auto flex-col sm:flex-row items-center justify-between gap-6">
-            <p>&copy; 2026 Salvation City Of All Nations. All rights reserved. | <a href="https://wa.me/27658718996" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-whatsapp"></i> +27 65 871 8996</a></p>
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+            <p>&copy; 2026 Salvation City Of All Nations. All rights reserved.</p>
             <div class="flex gap-6 text-xl">
+                <!-- YOUTUBE ICON ADDED -->
+                <a href="https://youtube.com/@pchimezirim?si=gbOfIgxONkMWaX01" target="_blank" class="hover:text-red-500 transition"><i class="fa-brands fa-youtube"></i></a>
                 <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me/27658718996" target="_blank" class="hover:text-green-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>
@@ -286,4 +299,4 @@
         }, 5000); // changes every 5 seconds
     </script>
 </body>
-                    </html>
+                </html>
